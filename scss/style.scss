@@ -13,6 +13,19 @@ $footer-background-color: #FFF;
 .main-text {
   font-family: monospace;
   font-size: 2em;
+  font-weight: bold;
+}
+
+.education-link {
+list-style-type: disc;
+}
+
+.education-list {
+  margin-left: 4%;
+}
+
+.attribution {
+  margin-left: 4%;
 }
 
 .has-bg-img {
