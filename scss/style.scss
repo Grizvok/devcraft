@@ -1,0 +1,55 @@
+@import '../node_modules/bulma/sass/utilities/_all';
+
+$footer-background-color: #FFF;
+
+.navbar-item {
+  font-family: monospace;
+}
+
+.footer-border {
+  border-top: 1px solid $grey-lighter;
+}
+
+.main-text {
+  font-family: monospace;
+  font-size: 2em;
+}
+
+.has-bg-img {
+  background: url('/static/codebackground5.jpg') center center;
+  background-size: cover;
+  background-size: 100%;
+
+  @include until($tablet) {
+    background-size: 150%;
+  }
+
+  @include until($desktop) {
+    background-size: 100%;
+  }
+}
+
+#devcraft-text {
+  color: #FFF;
+  font-family: monospace;
+  font-size: 7em;
+  
+  @include until($desktop) {
+    font-size: 3em;
+    font-weight: 100;
+
+  }
+
+  @include until($tablet) {
+    font-size: 2.5em;
+    font-weight: 100;
+
+  }
+}
+
+
+
+
+
+
+@import '../node_modules/bulma/bulma.sass';

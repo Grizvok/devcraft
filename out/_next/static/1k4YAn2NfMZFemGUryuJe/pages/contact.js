@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{225:function(n,o,t){__NEXT_REGISTER_PAGE("/contact",function(){return n.exports=t(226),{page:n.exports.default}})},226:function(n,o){}},[[225,0]]]);
