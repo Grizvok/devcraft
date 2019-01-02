@@ -6,8 +6,20 @@ $footer-background-color: #FFF;
   font-family: monospace;
 }
 
+
+
+.hero-text-container {
+  margin-top: 3.35%;
+  margin-bottom: 3.35%;
+}
+
 .footer-border {
   border-top: 1px solid $grey-lighter;
+}
+
+.contact-form {
+  margin-top: 3%;
+  margin-left: 5%;
 }
 
 .main-text {
@@ -24,8 +36,32 @@ list-style-type: disc;
   margin-left: 4%;
 }
 
+.about-box {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
 .attribution {
   margin-left: 4%;
+}
+
+.hero-div {
+  @include until($tablet) {
+    margin-top: 20%;
+  }
+}
+
+.has-bg-img3 {
+  background: url('/static/lightbulb.jpg') center center;
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+.has-bg-img2 {
+  background: url('/static/webbackground.jpg') center center;
+  background-size: 100%;
+  background-size: cover;
 }
 
 .has-bg-img {
@@ -33,13 +69,13 @@ list-style-type: disc;
   background-size: cover;
   background-size: 100%;
 
-  @include until($tablet) {
-    background-size: 150%;
-  }
+  // @include until($tablet) {
+  //   background-size: 150%;
+  // }
 
-  @include until($desktop) {
-    background-size: 100%;
-  }
+  // @include until($desktop) {
+  //   background-size: 100%;
+  // }
 }
 
 #devcraft-text {
