@@ -1,12 +1,10 @@
 @import '../node_modules/bulma/sass/utilities/_all';
 
-$footer-background-color: #FFF;
+$footer-background-color: #fff;
 
 .navbar-item {
   font-family: monospace;
 }
-
-
 
 .hero-text-container {
   margin-top: 3.35%;
@@ -17,9 +15,36 @@ $footer-background-color: #FFF;
   border-top: 1px solid $grey-lighter;
 }
 
-.contact-form {
+.footer-info {
+  font-family: monospace;
+  font-size: 0.8em;
+}
+
+.link-icon {
+  color: $link;
+}
+
+.contact-link {
+  color: #3273dc !important;
+}
+
+.home-hero-body {
+  margin-top: 2%;
+}
+
+.contact-hero-h1 {
+  font-size: 3em;
+  margin-left: 13%;
   margin-top: 3%;
-  margin-left: 5%;
+}
+
+.contact-hero-paragraph {
+  margin-left: 13%;
+  margin-bottom: 1%;
+}
+
+.contact-form {
+  margin-left: 4%;
 }
 
 .main-text {
@@ -29,7 +54,7 @@ $footer-background-color: #FFF;
 }
 
 .education-link {
-list-style-type: disc;
+  list-style-type: disc;
 }
 
 .education-list {
@@ -46,16 +71,16 @@ list-style-type: disc;
 }
 
 .hero-div {
+  margin-top: 2.75%;
   @include until($tablet) {
     margin-top: 20%;
   }
 }
 
 .has-bg-img3 {
-  background: url('/static/lightbulb.jpg') center center;
+  background: url('/static/chains.jpg') no-repeat center center;
   background-size: 100%;
   background-size: cover;
-  background-repeat: repeat-y;
 }
 
 .has-bg-img2 {
@@ -68,6 +93,7 @@ list-style-type: disc;
   background: url('/static/codebackground5.jpg') center center;
   background-size: cover;
   background-size: 100%;
+  background-repeat: no-repeat;
 
   // @include until($tablet) {
   //   background-size: 150%;
@@ -79,26 +105,19 @@ list-style-type: disc;
 }
 
 #devcraft-text {
-  color: #FFF;
+  color: #fff;
   font-family: monospace;
   font-size: 7em;
-  
+
   @include until($desktop) {
     font-size: 3em;
     font-weight: 100;
-
   }
 
   @include until($tablet) {
     font-size: 2.5em;
     font-weight: 100;
-
   }
 }
-
-
-
-
-
 
 @import '../node_modules/bulma/bulma.sass';

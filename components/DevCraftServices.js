@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 export default () => (
   <div className="tile is-ancestor">
@@ -8,25 +8,25 @@ export default () => (
         <h1 className="main-text">Services</h1>
         <div>
           <i className="fas fa-chevron-circle-right">
-            {" "}
+            {' '}
             Full Stack Web Application Development
           </i>
         </div>
         <div>
           <i className="fas fa-chevron-circle-right">
-            {" "}
+            {' '}
             Web Design and Branding
           </i>
         </div>
         <div>
           <i className="fas fa-chevron-circle-right">
-            {" "}
+            {' '}
             Search Engine Optimization
           </i>
         </div>
         <div>
           <i className="fas fa-chevron-circle-right">
-            {" "}
+            {' '}
             Beginner Web Development Education
           </i>
         </div>
@@ -34,21 +34,21 @@ export default () => (
       <div className="tile is-child box">
         <h1 className="main-text">My stack && tools</h1>
         <div>
-          <i class="fas fa-check"> React</i>
+          <i className="fas fa-check"> React</i>
         </div>
         <div>
-          {" "}
-          <i class="fas fa-check"> Node</i>
+          {' '}
+          <i className="fas fa-check"> Node</i>
         </div>
         <div>
-          {" "}
-          <i class="fas fa-check"> Express</i>
+          {' '}
+          <i className="fas fa-check"> Express</i>
         </div>
         <div>
-          <i class="fas fa-check"> PostgreSQL</i>
+          <i className="fas fa-check"> PostgreSQL</i>
         </div>
         <div>
-          <i class="fas fa-check"> Bulma</i>
+          <i className="fas fa-check"> Bulma</i>
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@ export default () => (
         <h1 className="main-text">Weekly Javascript && Web Education:</h1>
         <div className="attribution">
           <h2>
-            (All of these educational links have been cultivated by{" "}
+            (All of these educational links have been cultivated by{' '}
             <Link href="https://www.youtube.com/c/TimErmilov">
               <a>Tim Ermilov </a>
             </Link>

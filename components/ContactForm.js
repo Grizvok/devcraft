@@ -1,16 +1,13 @@
-import React from "react";
+import React from 'react';
 
 export default class ContactForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       name: '',
-      nameError: '',
       email: '',
-      emailError: '',
       message: '',
-      messageError: '',
-    }
+    };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -26,70 +23,85 @@ export default class ContactForm extends React.Component {
   }
 
   handleSubmit = async (e) => {
+    e.preventDefault();
     const name = this.state.name;
     const email = this.state.email;
     const message = this.state.message;
 
-    let err = this.validate();
-    e.preventDefault();
-    if (!err) {
+    const payload = {
+      name,
+      email,
+      message,
+    };
+
+    const res = await fetch('http://localhost:3001/api/message', {
+      method: 'POST',
+      body: JSON.stringify(payload),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (res.status === 200) {
       this.setState({
         name: '',
         email: '',
         message: '',
-        nameError: '',
-        emailError: '',
-        messageError: '',
-      })
+      });
     }
   };
 
-  validate = () => {
-    let isError;
-    const errors = {
-      nameError : '',
-      emailError: '',
-      messageError: ''
-    }
-
-    if (this.state.name < 1) {
-      isError = true;
-      errors.nameError = 'Please enter a name';
-    }
-
-    if (this.state.email ) {
-
-    }
-  }
-
   render() {
+    console.log(this.state);
     return (
-      <div class="columns">
-        <div class="column box contact-form is-half">
-          <div class="field">
-            <label class="label">Name</label>
-            <div class="control">
-              <input class="input" required type="text" placeholder="e.g Alex Smith" />
+      <div className="columns">
+        <div className="column box contact-form is-half">
+          <form method="POST" onSubmit={this.handleSubmit}>
+            <div className="field">
+              <label className="label">Name</label>
+              <div className="control">
+                <input
+                  className="input"
+                  name="name"
+                  required
+                  type="text"
+                  value={this.state.name}
+                  onChange={this.handleChange}
+                />
+              </div>
             </div>
-          </div>
 
-          <div class="field">
-            <label class="label">Email</label>
-            <div class="control">
-              <input
-                class="input"
-                required
-                type="email"
-                placeholder="e.g. alexsmith@gmail.com"
-              />
+            <div className="field">
+              <label className="label">Email</label>
+              <div className="control">
+                <input
+                  className="input"
+                  name="email"
+                  required
+                  type="email"
+                  value={this.state.email}
+                  onChange={this.handleChange}
+                />
+              </div>
             </div>
-          </div>
-          <div class="field">
-            <label class="label">Message</label>
-            <div class="control">
-              <textarea class="textarea" required placeholder="Textarea" />
+            <div className="field">
+              <label className="label">Message</label>
+              <div className="control">
+                <textarea
+                  className="textarea"
+                  name="message"
+                  value={this.state.message}
+                  onChange={this.handleChange}
+                  required
+                />
+              </div>
             </div>
-          </div>
+            <div align="left" className="field">
+              <p className="control">
+                <button className="button is-link">Send</button>
+              </p>
+            </div>
+          </form>
         </div>
       </div>
     );

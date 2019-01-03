@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "nodemon ./server/index.js",
     "build": "next build",
     "start": "next start",
     "export": "next export"
@@ -15,9 +15,15 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
+    "body-parser": "^1.18.3",
     "bulma": "^0.7.2",
+    "chalk": "^2.4.1",
+    "dotenv": "^6.2.0",
+    "eslint": "^5.11.1",
+    "express": "^4.16.4",
     "next": "^7.0.2",
     "node-sass": "^4.10.0",
+    "nodemailer": "^5.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   }

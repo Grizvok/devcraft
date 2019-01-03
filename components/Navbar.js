@@ -1,6 +1,6 @@
 //npm packages
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 //our packages
 
@@ -9,7 +9,7 @@ class Header extends React.Component {
     super(props);
 
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
 
     //this.closeNavbar = this.closeNavbar.bind(this);
@@ -18,19 +18,19 @@ class Header extends React.Component {
   }
 
   handleNavigation() {
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector("#" + burger.dataset.target);
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('#' + burger.dataset.target);
 
-    burger.classList.remove("is-active");
-    nav.classList.remove("is-active");
+    burger.classList.remove('is-active');
+    nav.classList.remove('is-active');
   }
 
   handleClick() {
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector("#" + burger.dataset.target);
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('#' + burger.dataset.target);
 
-    burger.classList.toggle("is-active");
-    nav.classList.toggle("is-active");
+    burger.classList.toggle('is-active');
+    nav.classList.toggle('is-active');
   }
 
   render() {
@@ -39,7 +39,9 @@ class Header extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link prefetch href="/">
-              <a className="navbar-item"><i class="fas fa-2x fa-home"></i></a>
+              <a className="navbar-item">
+                <i className="fas fa-2x fa-home" />
+              </a>
             </Link>
             <span
               onClick={this.handleClick}
