@@ -58,7 +58,7 @@ export default () => (
         <div className="attribution">
           <h2>
             (All of these educational links have been cultivated by{' '}
-            <Link href="https://www.youtube.com/c/TimErmilov">
+            <Link prefetch href="https://www.youtube.com/c/TimErmilov">
               <a>Tim Ermilov </a>
             </Link>
             creator of BxJS)

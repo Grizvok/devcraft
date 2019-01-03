@@ -31,7 +31,7 @@ export default class AboutBox extends React.Component {
                       Products with Javascript.
                     </p>
                     <span>Message me through this site </span>
-                    <Link href="/contact">
+                    <Link prefetch href="/contact">
                       <span>
                         <a className="contact-link">here.</a>
                       </span>
@@ -39,7 +39,7 @@ export default class AboutBox extends React.Component {
                   </div>
                   <nav className="level is-mobile">
                     <div className="level-left">
-                      <Link href="https://twitter.com/devcraft1">
+                      <Link prefetch href="https://twitter.com/devcraft1">
                         <a className="level-item" aria-label="reply">
                           <span className="icon is-small">
                             <a className="contact-link">
@@ -48,7 +48,7 @@ export default class AboutBox extends React.Component {
                           </span>
                         </a>
                       </Link>
-                      <Link href="https://github.com/devforging">
+                      <Link prefetch href="https://github.com/devforging">
                         <a className="level-item" aria-label="github">
                           <span className="icon is-small">
                             <a className="contact-link">

@@ -58,9 +58,9 @@ class Header extends React.Component {
               <Link prefetch href="/about">
                 <a className="navbar-item">About</a>
               </Link>
-              <a href="/contact" className="navbar-item">
-                Contact
-              </a>
+              <Link prefetch href="/contact">
+                <a className="navbar-item">Contact</a>
+              </Link>
             </div>
           </div>
         </div>
