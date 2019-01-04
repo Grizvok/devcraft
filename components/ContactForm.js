@@ -34,7 +34,7 @@ export default class ContactForm extends React.Component {
       message,
     };
 
-    const res = await fetch('http://localhost:3001/api/message', {
+    const res = await fetch('http://localhost:3000/api/message', {
       method: 'POST',
       body: JSON.stringify(payload),
       headers: {
@@ -52,7 +52,6 @@ export default class ContactForm extends React.Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <div className="columns">
         <div className="column box contact-form is-half">

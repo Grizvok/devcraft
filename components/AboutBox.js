@@ -39,24 +39,25 @@ export default class AboutBox extends React.Component {
                   </div>
                   <nav className="level is-mobile">
                     <div className="level-left">
-                      <Link prefetch href="https://twitter.com/devcraft1">
-                        <a className="level-item" aria-label="reply">
-                          <span className="icon is-small">
-                            <a className="contact-link">
-                              <i className="fab fa-twitter" />
-                            </a>
-                          </span>
-                        </a>
-                      </Link>
-                      <Link prefetch href="https://github.com/devforging">
-                        <a className="level-item" aria-label="github">
-                          <span className="icon is-small">
-                            <a className="contact-link">
-                              <i className="fab fa-github" />
-                            </a>
-                          </span>
-                        </a>
-                      </Link>
+                      <a
+                        href="https://twitter.com/devcraft1"
+                        className="level-item"
+                        aria-label="reply"
+                      >
+                        <span className="icon is-small">
+                          <i className="fab fa-twitter" />
+                        </span>
+                      </a>
+
+                      <a
+                        href="https://github.com/devforging"
+                        className="level-item"
+                        aria-label="github"
+                      >
+                        <span className="icon is-small">
+                          <i className="fab fa-github" />
+                        </span>
+                      </a>
                     </div>
                   </nav>
                 </div>

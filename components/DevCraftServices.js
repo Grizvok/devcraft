@@ -58,78 +58,78 @@ export default () => (
         <div className="attribution">
           <h2>
             (All of these educational links have been cultivated by{' '}
-            <Link prefetch href="https://www.youtube.com/c/TimErmilov">
+            <a href="https://www.youtube.com/c/TimErmilov">
               <a>Tim Ermilov </a>
-            </Link>
+            </a>
             creator of BxJS)
           </h2>
         </div>
         <br />
         <ul className="education-list">
           <li className="education-link">
-            <Link href="https://dev.to/agathacco/how-to-create-pure-css-illustrations-and-animate-them---part-1-1j1k">
+            <a href="https://dev.to/agathacco/how-to-create-pure-css-illustrations-and-animate-them---part-1-1j1k">
               <a>How to create pure CSS illustrations and animate them</a>
-            </Link>
+            </a>
           </li>
           <li className="education-link">
-            <Link href="https://medium.com/@ctrlplusb/easy-peasy-global-state-in-react-w-hooks-421f5bf827cf">
+            <a href="https://medium.com/@ctrlplusb/easy-peasy-global-state-in-react-w-hooks-421f5bf827cf">
               <a>Easy Peasy global state in React w/ Hooks</a>
-            </Link>
+            </a>
           </li>
           <li className="education-link">
-            <Link href="https://medium.com/javascript-scene/transducers-efficient-data-processing-pipelines-in-javascript-7985330fe73d">
+            <a href="https://medium.com/javascript-scene/transducers-efficient-data-processing-pipelines-in-javascript-7985330fe73d">
               <a>
                 Transducers: Efficient Data Processing Pipelines in JavaScript
               </a>
-            </Link>
+            </a>
           </li>
           <li className="education-link">
-            <Link href="https://medium.com/@pomber/lazy-loading-and-preloading-components-in-react-16-6-804de091c82d">
+            <a href="https://medium.com/@pomber/lazy-loading-and-preloading-components-in-react-16-6-804de091c82d">
               <a>Lazy loading (and preloading) components in React 16.6</a>
-            </Link>
+            </a>
           </li>
           <li className="education-link">
-            <Link href="https://overreacted.io/why-do-we-write-super-props/">
+            <a href="https://overreacted.io/why-do-we-write-super-props/">
               <a>Why Do We Write super(props)?</a>
-            </Link>
+            </a>
           </li>
           <li className="education-link">
-            <Link href="https://www.ably.io/concepts/websockets">
+            <a href="https://www.ably.io/concepts/websockets">
               <a>WebSockets - A Conceptual Deep-Dive</a>
-            </Link>
+            </a>
           </li>
           <li className="education-link">
-            <Link href="https://blog.bitsrc.io/understanding-memoization-in-javascript-to-improve-performance-2763ab107092">
+            <a href="https://blog.bitsrc.io/understanding-memoization-in-javascript-to-improve-performance-2763ab107092">
               <a>
                 Understanding Memoization in JavaScript to Improve Performance
               </a>
-            </Link>
+            </a>
           </li>
           <li className="education-link">
-            <Link href="https://dev.to/brightdevs/using-webassembly-with-react-1led">
+            <a href="https://dev.to/brightdevs/using-webassembly-with-react-1led">
               <a>Using WebAssembly with React</a>
-            </Link>
+            </a>
           </li>
           <li className="education-link">
-            <Link href="https://bitsofco.de/what-exactly-is-the-dom/">
+            <a href="https://bitsofco.de/what-exactly-is-the-dom/">
               <a>What, exactly, is the DOM?</a>
-            </Link>
+            </a>
           </li>
           <li className="education-link">
-            <Link href="https://medium.com/@devdevcharlie/experimenting-with-brain-computer-interfaces-in-javascript-8d6cb891fda8">
+            <a href="https://medium.com/@devdevcharlie/experimenting-with-brain-computer-interfaces-in-javascript-8d6cb891fda8">
               <a>Experimenting with brain-computer interfaces in JavaScript.</a>
-            </Link>
+            </a>
           </li>
 
           <li className="education-link">
-            <Link href="https://nystudio107.com/blog/an-annotated-webpack-4-config-for-frontend-web-development">
+            <a href="https://nystudio107.com/blog/an-annotated-webpack-4-config-for-frontend-web-development">
               <a>An Annotated webpack 4 Config for Frontend Web Development</a>
-            </Link>
+            </a>
           </li>
           <li className="education-link">
-            <Link href="https://levelup.gitconnected.com/the-definite-guide-to-handling-errors-gracefully-in-javascript-58424d9c60e6">
+            <a href="https://levelup.gitconnected.com/the-definite-guide-to-handling-errors-gracefully-in-javascript-58424d9c60e6">
               <a>Handling Errors in JavaScript: The Definitive Guide</a>
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

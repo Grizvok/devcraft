@@ -10,16 +10,13 @@ export default () => (
             <p className="footer-info has-text-centered">devCraft</p>
             <p className="footer-info">Pittsburgh, Pennsylvania</p>
             <p className="footer-info">
-              <Link href="https://github.com/devforging">
-                <a>
-                  <span>@github</span>
-                </a>
-              </Link>
-              <Link href="https://twitter.com/devcraft1">
-                <a>
-                  <span> @twitter</span>
-                </a>
-              </Link>
+              <a href="https://github.com/devforging">
+                <span>@github</span>
+              </a>
+
+              <a href="https://twitter.com/devcraft1">
+                <span> @twitter</span>
+              </a>
             </p>
             <p className="footer-info">Web Development && Design</p>
           </div>

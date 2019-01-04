@@ -3,12 +3,13 @@ var express = require('express');
 var router = express.Router();
 
 router.post('/', async (req, res) => {
-  console.log('hit the new endpoint!');
+  console.log(req.body);
+  console.log('hit the newest endpoint!');
   const emailStr = await JSON.stringify(req.body);
   const transporter = nodeMailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.USER,
+      user: process.env.USER_EMAIL,
       pass: process.env.USER_PW,
     },
   });
@@ -23,14 +24,14 @@ router.post('/', async (req, res) => {
   transporter.sendMail(mailOptions, function(err, info) {
     if (err) {
       console.log(err);
+      res
+        .status(400)
+        .send({ message: 'Your message was not sent successfully' });
     } else {
       console.log(info);
+      res.status(200).send({ message: 'Your message was sent sucessfully' });
     }
   });
-
-  if (req.body) {
-    res.status(200).send({ message: 'Your message was sent successfully' });
-  }
 });
 
 module.exports = router;
