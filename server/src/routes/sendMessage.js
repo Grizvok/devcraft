@@ -1,9 +1,11 @@
 const nodeMailer = require('nodemailer');
 var express = require('express');
+var cors = require('cors');
 var router = express.Router();
 
-router.post('/', async (req, res) => {
+router.post('/', cors(), async (req, res) => {
   console.log(req.body);
+  const messageStr = JSON.stringify(req.body);
   console.log('hit the newest endpoint!');
   const emailStr = await JSON.stringify(req.body);
   const transporter = nodeMailer.createTransport({
@@ -18,7 +20,7 @@ router.post('/', async (req, res) => {
     from: 'devcraft6772@gmail.com', // sender address
     to: 'devcraft6772@gmail.com', // list of receivers
     subject: 'Message from devCraft site!', // Subject line
-    html: `${emailStr}`, // plain text body
+    html: `${messageStr}`, // plain text body
   };
 
   transporter.sendMail(mailOptions, function(err, info) {
