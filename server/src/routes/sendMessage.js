@@ -11,10 +11,8 @@ const corsOptions = {
 router.options('/', cors());
 
 router.post('/', cors(corsOptions), async (req, res) => {
-  const messageStr = JSON.stringify(req.body);
-  console.log('hit the newest endpoint!');
-  const emailStr = await JSON.stringify(req.body);
-  const transporter = nodeMailer.createTransport({
+  const messageStr = await JSON.stringify(req.body);
+  const transporter = await nodeMailer.createTransport({
     service: 'gmail',
     auth: {
       user: process.env.USER_EMAIL,
