@@ -3,8 +3,14 @@ var express = require('express');
 var cors = require('cors');
 var router = express.Router();
 
-router.post('/', cors(), async (req, res) => {
-  console.log(req.body);
+const corsOptions = {
+   origin: 'http://www.trevorhunka.xyz',
+   OptionsSuccessStatus: 200,
+};
+
+router.options('/', cors());
+
+router.post('/', cors(corsOptions), async (req, res) => {
   const messageStr = JSON.stringify(req.body);
   console.log('hit the newest endpoint!');
   const emailStr = await JSON.stringify(req.body);
