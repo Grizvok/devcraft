@@ -34,11 +34,13 @@ export default class ContactForm extends React.Component {
       message,
     };
 
-    const res = await fetch('http://trevorhunka.xyz/api/message', {
+    console.log(process.env.PORT);
+
+    const res = await fetch('http://localhost:3000/api/message', {
       method: 'POST',
       body: JSON.stringify(payload),
       headers: {
-	'Content-Type': 'application/json',
+        'Content-Type': 'application/json',
       },
     });
 

@@ -53,12 +53,23 @@ $footer-background-color: #fff;
   font-weight: bold;
 }
 
+.belief-title {
+  font-family: monospace;
+  color: $link !important;
+}
+
 .education-link {
   list-style-type: disc;
+  color: #3273dc !important;
 }
 
 .education-list {
   margin-left: 4%;
+}
+
+.beliefs-box {
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
 .about-box {
@@ -84,7 +95,7 @@ $footer-background-color: #fff;
 }
 
 .has-bg-img2 {
-  background: url('/static/webbackground.jpg') center center;
+  background: url('/static/skypanels.jpg') no-repeat center center;
   background-size: 100%;
   background-size: cover;
 }
@@ -94,14 +105,6 @@ $footer-background-color: #fff;
   background-size: cover;
   background-size: 100%;
   background-repeat: no-repeat;
-
-  // @include until($tablet) {
-  //   background-size: 150%;
-  // }
-
-  // @include until($desktop) {
-  //   background-size: 100%;
-  // }
 }
 
 #devcraft-text {

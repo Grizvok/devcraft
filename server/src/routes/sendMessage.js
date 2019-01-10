@@ -4,15 +4,15 @@ var cors = require('cors');
 var router = express.Router();
 
 const corsOptions = {
-   origin: 'http://www.trevorhunka.xyz',
-   OptionsSuccessStatus: 200,
+  origin: 'http://localhost:3000',
+  OptionsSuccessStatus: 200,
 };
 
 router.options('/', cors());
 
 router.post('/', cors(corsOptions), async (req, res) => {
   const messageStr = await JSON.stringify(req.body);
-  const transporter = await nodeMailer.createTransport({
+  const transporter = nodeMailer.createTransport({
     service: 'gmail',
     auth: {
       user: process.env.USER_EMAIL,
