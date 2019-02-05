@@ -1,28 +1,39 @@
-import React from 'react';
+import React from "react";
+
+import OtherContact from "./OtherContact";
+import ConfirmationModal from "./ConfirmationModal";
 
 export default class ContactForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
+      showConfirmation: false
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleModalClose = this.handleModalClose.bind(this);
   }
 
-  handleChange(e) {
+  handleModalClose = () => {
+    this.setState({
+      showConfirmation: false
+    })
+  }
+
+  handleChange = (e) => {
     const target = e.target;
     const value = e.target.value;
     const name = target.name;
 
     this.setState({
-      [name]: value,
+      [name]: value
     });
   }
 
-  handleSubmit = async (e) => {
+  handleSubmit = async e => {
     e.preventDefault();
     const name = this.state.name;
     const email = this.state.email;
@@ -31,31 +42,31 @@ export default class ContactForm extends React.Component {
     const payload = {
       name,
       email,
-      message,
+      message
     };
 
-    console.log(process.env.PORT);
-
-    const res = await fetch('http://localhost:3000/api/message', {
-      method: 'POST',
+    const res = await fetch("http://localhost:3000/api/message", {
+      method: "POST",
       body: JSON.stringify(payload),
       headers: {
-        'Content-Type': 'application/json',
-      },
+        "Content-Type": "application/json"
+      }
     });
 
     if (res.status === 200) {
-      this.setState({
-        name: '',
-        email: '',
-        message: '',
-      });
+      this.setState(prevState => ({
+        name: "",
+        email: "",
+        message: "",
+        showConfirmation: true
+      }));
     }
   };
 
   render() {
     return (
-      <div className="columns">
+      <div className="columns contact-box">
+        <ConfirmationModal handleModalClose={this.handleModalClose} showConfirmation={this.state.showConfirmation} />
         <div className="column box contact-form is-half">
           <form method="POST" onSubmit={this.handleSubmit}>
             <div className="field">
@@ -71,7 +82,6 @@ export default class ContactForm extends React.Component {
                 />
               </div>
             </div>
-
             <div className="field">
               <label className="label">Email</label>
               <div className="control">
@@ -103,6 +113,9 @@ export default class ContactForm extends React.Component {
               </p>
             </div>
           </form>
+        </div>
+        <div className="column is-one-third has-text-centered">
+          <OtherContact />
         </div>
       </div>
     );

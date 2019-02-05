@@ -20,26 +20,73 @@ $footer-background-color: #fff;
   font-size: 0.8em;
 }
 
+.contact-header {
+  font-family: monospace;
+  font-size: .9em;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+
+.other-contact-text {
+  font-size: 1em;
+}
+
+.contact-hero-body {
+  padding-top: 1% !important;
+  padding-bottom: .5% !important;
+}
+
+.github-icon {
+  font-size: 3em;
+  color: #3273dc;
+}
+
+.twitter-icon {
+  font-size: 3em;
+  color: #3273dc;
+}
+
+.github-contact {
+  margin-bottom: 12%;
+}
+
 .link-icon {
   color: $link;
+  display: inline-block;
+}
+
+.other-contact-methods {
+  font-size: 1.5em;
+}
+
+.belief-topic {
+  font-family: monospace;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+.belief-list-item {
+  margin-bottom: 5%;
+  margin-top: 6%;
 }
 
 .contact-link {
   color: #3273dc !important;
 }
 
-.home-hero-body {
-  margin-top: 2%;
+.mission-statement {
+  text-decoration: underline;
+  font-family: monospace;
 }
 
 .contact-hero-h1 {
   font-size: 3em;
-  margin-left: 13%;
-  margin-top: 3%;
+  margin-left: 11%;
+  margin-top: .5%;
 }
 
 .contact-hero-paragraph {
-  margin-left: 13%;
+  margin-left: 16.5%;
   margin-bottom: 1%;
 }
 
@@ -55,7 +102,6 @@ $footer-background-color: #fff;
 
 .belief-title {
   font-family: monospace;
-  color: $link !important;
 }
 
 .education-link {
@@ -63,18 +109,26 @@ $footer-background-color: #fff;
   color: #3273dc !important;
 }
 
+.education-link:visited {
+  text-decoration-color: #000;
+}
+
+.education-link:hover {
+  text-decoration: underline;
+}
+
 .education-list {
   margin-left: 4%;
 }
 
 .beliefs-box {
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .about-box {
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .attribution {
@@ -86,6 +140,22 @@ $footer-background-color: #fff;
   @include until($tablet) {
     margin-top: 20%;
   }
+}
+
+.click-confirmation-message {
+  font-family: monospace;
+  margin-bottom: .5%;
+}
+
+.confirmation-icon {
+  color: $success;
+  font-size: 2em; 
+}
+
+.confirmation-message {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 1.5em;
 }
 
 .has-bg-img3 {

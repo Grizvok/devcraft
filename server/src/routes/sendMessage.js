@@ -11,6 +11,7 @@ const corsOptions = {
 router.options('/', cors());
 
 router.post('/', cors(corsOptions), async (req, res) => {
+  console.log('this runs!');
   const messageStr = await JSON.stringify(req.body);
   const transporter = nodeMailer.createTransport({
     service: 'gmail',
