@@ -4,7 +4,7 @@ var cors = require('cors');
 var router = express.Router();
 
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'http://www.trevorhunka.xyz',
   OptionsSuccessStatus: 200,
 };
 

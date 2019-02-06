@@ -15,14 +15,14 @@ class ConfirmationModal extends React.Component {
     document.removeEventListener('click', this.handleClose)
   }
 
-  handleClose = () => {
+  handleClose () {
     this.props.handleModalClose();
   }
 
   render() {
     if (this.props.showConfirmation === true) {
       return (
-        <div className="modal is-active">
+        <div className="modal confirmation-modal is-active">
           <div className="modal-background" />
           <div className="modal-content">
             <div className="box modal-confirmation-box has-text-centered">
