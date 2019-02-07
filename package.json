@@ -23,6 +23,7 @@
     "dotenv": "^6.2.0",
     "eslint": "^5.11.1",
     "express": "^4.16.4",
+    "lru-cache": "^5.1.1",
     "next": "^7.0.2",
     "node-sass": "^4.10.0",
     "nodemailer": "^5.0.0",

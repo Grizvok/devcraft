@@ -1,7 +1,7 @@
 const nodeMailer = require('nodemailer');
-var express = require('express');
-var cors = require('cors');
-var router = express.Router();
+const cors = require('cors');
+const express = require('express');
+const router = express.Router();
 
 const corsOptions = {
   origin: 'http://www.trevorhunka.xyz',

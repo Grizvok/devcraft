@@ -26,7 +26,7 @@ class ConfirmationModal extends React.Component {
           <div className="modal-background" />
           <div className="modal-content">
             <div className="box modal-confirmation-box has-text-centered">
-            <i class="far fa-check-circle confirmation-icon"></i>
+            <i className="far fa-check-circle confirmation-icon"></i>
               <p className="confirmation-message">Your message was sent successfully!</p>
               <p className="click-confirmation-message">Click anywhere to continue.</p>
             </div>
