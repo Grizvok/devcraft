@@ -4,7 +4,7 @@ const express = require('express');
 const router = express.Router();
 
 const corsOptions = {
-  origin: 'http://www.trevorhunka.xyz',
+  origin: 'https://www.trevorhunka.xyz',
   OptionsSuccessStatus: 200,
 };
 
