@@ -8,6 +8,7 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 const setupRoutes = require('./src/routes/index');
 const LRUCache = require('lru-cache');
+const compression = require('compression');
 
 const ssrCache = new LRUCache({
   max: 100,
@@ -16,6 +17,7 @@ const ssrCache = new LRUCache({
 
 app.prepare().then(() => {
   const server = express();
+  server.use(compression());
   server.use(bodyParser.json());
   server.use(bodyParser.urlencoded({ extended: true }));
 
