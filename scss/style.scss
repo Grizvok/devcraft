@@ -1,4 +1,4 @@
-@import '../node_modules/bulma/sass/utilities/_all';
+@import "../node_modules/bulma/sass/utilities/_all";
 
 $footer-background-color: #fff;
 
@@ -63,8 +63,20 @@ $footer-background-color: #fff;
   }
 }
 
+.about-devcraft-text {
+  @include until($tablet) {
+    font-size: 0.75em;
+  }
+}
+
 .other-contact-text {
   font-size: 1em;
+}
+
+.twitter-icon {
+  @include until($tablet) {
+    margin-bottom: 8%;
+  }
 }
 
 .contact-hero-body {
@@ -72,14 +84,13 @@ $footer-background-color: #fff;
   padding-bottom: 0.5% !important;
 }
 
-.github-icon {
+.social-media-icon {
   font-size: 3em;
   color: #3273dc;
-}
 
-.twitter-icon {
-  font-size: 3em;
-  color: #3273dc;
+  @include until($tablet) {
+    font-size: 2em;
+  }
 }
 
 .github-contact {
@@ -112,23 +123,44 @@ $footer-background-color: #fff;
   padding-bottom: 6.85%;
 }
 
+.contact-text {
+  @include until($tablet) {
+    font-size: 0.75em;
+  }
+}
+
 .other-contact-methods {
   font-size: 1.5em;
+}
+
+.contact-link-text {
+  @include until($tablet) {
+    font-size: .75em;
+  }
 }
 
 .belief-topic {
   font-family: monospace;
   font-weight: bold;
   margin-top: 5%;
+
+  @include until($tablet) {
+    font-size: 0.75em;
+  }
 }
 
 .belief-list-item {
   margin-bottom: 5%;
   margin-top: 6%;
+
+  @include until($tablet) {
+    font-size: 0.75em;
+  }
 }
 
 .contact-link {
   color: #3273dc !important;
+
 }
 
 .mission-statement {
@@ -152,7 +184,7 @@ $footer-background-color: #fff;
   margin-bottom: 1%;
 
   @include until($tablet) {
-    margin-left: 5%;
+    margin-left: 4%;
     margin-right: 5%;
     margin-top: 4%;
     margin-bottom: 4%;
@@ -193,6 +225,12 @@ $footer-background-color: #fff;
 
 .belief-title {
   font-family: monospace;
+  font-size: 2em;
+  font-weight: bold;
+
+  @include until($tablet) {
+    font-size: 1.25em !important;
+  }
 }
 
 .education-link {
@@ -258,19 +296,19 @@ $footer-background-color: #fff;
 }
 
 .has-bg-img3 {
-  background: url('/static/chains.jpg') no-repeat center center;
+  background: url("/static/chains.jpg") no-repeat center center;
   background-size: 100%;
   background-size: cover;
 }
 
 .has-bg-img2 {
-  background: url('/static/skypanels.jpg') no-repeat center center;
+  background: url("/static/skypanels.jpg") no-repeat center center;
   background-size: 100%;
   background-size: cover;
 }
 
 .has-bg-img {
-  background: url('/static/codebackground5.jpg') center center;
+  background: url("/static/codebackground5.jpg") center center;
   background-size: cover;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -292,4 +330,4 @@ $footer-background-color: #fff;
   }
 }
 
-@import '../node_modules/bulma/bulma.sass';
+@import "../node_modules/bulma/bulma.sass";
