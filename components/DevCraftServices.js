@@ -7,62 +7,58 @@ export default () => (
       <div className="tile is-child box">
         <h1 className="main-text">Services</h1>
         <div>
-          <i className="fas fa-chevron-circle-right">
+          <i className="fas fa-chevron-circle-right stack-services-text">
             {' '}
-            Full Stack Web Application Development
+            <span className="service-offering">
+              Full Stack Web Application Development
+            </span>
           </i>
         </div>
         <div>
-          <i className="fas fa-chevron-circle-right">
+          <i className="fas fa-chevron-circle-right stack-services-text">
             {' '}
-            Web Design and Branding
+            <span className="service-offering">Web Design and Branding</span>
           </i>
         </div>
         <div>
-          <i className="fas fa-chevron-circle-right">
+          <i className="fas fa-chevron-circle-right stack-services-text">
             {' '}
-            Search Engine Optimization
+            <span className="service-offering">Search Engine Optimization</span>
           </i>
         </div>
         <div>
-          <i className="fas fa-chevron-circle-right">
+          <i className="fas fa-chevron-circle-right stack-services-text">
             {' '}
-            Beginner Web Development Education
+            <span className="service-offering">
+              Beginner Web Development Education
+            </span>
           </i>
         </div>
       </div>
       <div className="tile is-child box">
         <h1 className="main-text">My stack && tools</h1>
         <div>
-          <i className="fas fa-check"> React</i>
+          <i className="fas fa-check stack-services-text"> React</i>
         </div>
         <div>
           {' '}
-          <i className="fas fa-check"> Node</i>
+          <i className="fas fa-check stack-services-text"> Node</i>
         </div>
         <div>
           {' '}
-          <i className="fas fa-check"> Express</i>
+          <i className="fas fa-check stack-services-text"> Express</i>
         </div>
         <div>
-          <i className="fas fa-check"> PostgreSQL</i>
+          <i className="fas fa-check stack-services-text"> PostgreSQL</i>
         </div>
         <div>
-          <i className="fas fa-check"> Bulma</i>
+          <i className="fas fa-check stack-services-text"> Bulma</i>
         </div>
       </div>
     </div>
     <div className="tile is-parent">
       <div className="tile is-child box">
         <h1 className="main-text">Weekly Javascript && Web Education:</h1>
-        <div className="attribution">
-          <h2>
-            (All of these educational links have been cultivated by{' '}
-            <a href="https://www.youtube.com/c/TimErmilov">Tim Ermilov </a>
-            creator of BxJS)
-          </h2>
-        </div>
-        <br />
         <ul className="education-list">
           <li className="education-link">
             <a href="https://dev.to/agathacco/how-to-create-pure-css-illustrations-and-animate-them---part-1-1j1k">

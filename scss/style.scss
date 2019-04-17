@@ -59,7 +59,7 @@ $footer-background-color: #fff;
   padding-bottom: 5%;
 
   @include until($tablet) {
-    font-size: 0.5em;
+    font-size: 0.4em;
   }
 }
 
@@ -99,7 +99,7 @@ $footer-background-color: #fff;
   display: inline-block;
 
   @include until($tablet) {
-    font-size: 0.7em;
+    font-size: 0.5em;
   }
 }
 
@@ -161,9 +161,7 @@ $footer-background-color: #fff;
 }
 
 .contact-form {
-  @include until($desktop) {
-    margin-left: 4%;
-  }
+  margin-left: 4%;
 
   @include until($tablet) {
     margin-left: 0%;
@@ -171,10 +169,26 @@ $footer-background-color: #fff;
   }
 }
 
+.stack-services-text {
+  @include until($tablet) {
+    font-size: 0.75em;
+  }
+}
+
+.service-offering {
+  @include until($tablet) {
+    font-size: 1em;
+  }
+}
+
 .main-text {
   font-family: monospace;
   font-size: 2em;
   font-weight: bold;
+
+  @include until($tablet) {
+    font-size: 1.25em;
+  }
 }
 
 .belief-title {
@@ -184,6 +198,10 @@ $footer-background-color: #fff;
 .education-link {
   list-style-type: disc;
   color: #3273dc !important;
+
+  @include until($tablet) {
+    font-size: 0.75em;
+  }
 }
 
 .education-link:visited {
@@ -196,6 +214,10 @@ $footer-background-color: #fff;
 
 .education-list {
   margin-left: 4%;
+
+  @include until($tablet) {
+    margin-top: 4%;
+  }
 }
 
 .beliefs-box {
