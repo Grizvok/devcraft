@@ -144,9 +144,6 @@ $footer-background-color: #fff;
   font-weight: bold;
   margin-top: 5%;
 
-  @include until($tablet) {
-    font-size: 0.75em;
-  }
 }
 
 .belief-list-item {
