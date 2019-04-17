@@ -57,6 +57,10 @@ $footer-background-color: #fff;
   font-size: 0.9em;
   font-weight: bold;
   padding-bottom: 5%;
+
+  @include until($tablet) {
+    font-size: 0.5em;
+  }
 }
 
 .other-contact-text {
@@ -93,6 +97,10 @@ $footer-background-color: #fff;
 .link-icon {
   color: $link;
   display: inline-block;
+
+  @include until($tablet) {
+    font-size: 0.7em;
+  }
 }
 
 .blog-title {
@@ -132,15 +140,35 @@ $footer-background-color: #fff;
   font-size: 3em;
   margin-left: 11%;
   margin-top: 0.5%;
+
+  @include until($tablet) {
+    margin-left: 3.5%;
+    margin-top: 1%;
+  }
 }
 
 .contact-hero-paragraph {
   margin-left: 16.5%;
   margin-bottom: 1%;
+
+  @include until($tablet) {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 0.8em;
+  }
 }
 
 .contact-form {
-  margin-left: 4%;
+  @include until($desktop) {
+    margin-left: 4%;
+  }
+
+  @include until($tablet) {
+    margin-left: 0%;
+    margin-top: 5%;
+  }
 }
 
 .main-text {
