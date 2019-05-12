@@ -131,6 +131,15 @@ $footer-background-color: #fff;
   color: #3273dc !important;
 }
 
+.specific-blog-title {
+  font-weight: bold;
+  font-family: Roboto;
+  font-size: 2em;
+  @include until($tablet) {
+    font-size: 1.5em;
+  }
+}
+
 .mission-statement {
   text-decoration: underline;
   font-family: monospace;
