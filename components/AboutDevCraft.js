@@ -8,7 +8,7 @@ export default () => (
         <article className="media">
           <div className="media-content">
             <div className="content">
-              <p>
+              <p className="about-devcraft-text">
                 <strong>Trevor Hunka</strong> <small>@devcraft1</small> I am a
                 self-taught software developer and web designer interested in
                 finding customers who need web solutions and hosting for both
@@ -17,10 +17,10 @@ export default () => (
                 framework built on top of React and other powerful tools like
                 webpack.
               </p>
-              <span>Message me through our site </span>
+              <span className="contact-text">Message me through our site </span>
               <Link prefetch href="/contact">
                 <span>
-                  <a className="contact-link">here.</a>
+                  <a className="contact-link contact-link-text">here.</a>
                 </span>
               </Link>
             </div>
@@ -54,7 +54,7 @@ export default () => (
         <article className="media">
           <div className="media-content">
             <div className="content">
-              <p>
+              <p className="about-devcraft-text">
                 <span className="mission-statement">
                   <strong>Our mission</strong>
                 </span>
